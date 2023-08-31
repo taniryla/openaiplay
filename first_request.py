@@ -7,5 +7,7 @@ openai.api_key = config("OPENAI_API_KEY")
 
 openai.Completion.create(
     model="text-davinci-003",
-    prompt="The dog says "
+    prompt="The top 10 most populated cities are: ",
+    max_tokens=100
+
 )
