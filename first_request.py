@@ -8,7 +8,8 @@ openai.api_key = config("OPENAI_API_KEY")
 response = openai.Completion.create(
     model="text-davinci-003",
     prompt="Generate a list of the best movies of all time: ",
-    max_tokens=100
+    max_tokens=100,
+    stop="5"
 )
 
 print(response["choices"][0]["text"])
